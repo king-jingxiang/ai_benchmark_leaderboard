@@ -19,9 +19,9 @@ function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch(`${R2_BASE_URL}/leaderboard/models.json`).then(res => res.json()),
+      fetch(`${R2_BASE_URL}/ai_benchmark_leaderboard/latest/leaderboard/models.json`).then(res => res.json()),
       // Catch error and return empty array for benchmarks
-      fetch(`${R2_BASE_URL}/leaderboard/benchmarks.json`).then(res => res.json()).catch(() => ([]))
+      fetch(`${R2_BASE_URL}/ai_benchmark_leaderboard/latest/benchmarks/benchmarks.json`).then(res => res.json()).catch(() => ([]))
     ])
       .then(([modelsData, benchmarksData]) => {
         const groups = modelsData as CategoryGroup[];

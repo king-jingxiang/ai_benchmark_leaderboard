@@ -55,8 +55,8 @@ const ModelDetailPage = ({ models, categories, benchmarks, loading }: ModelDetai
     if (!modelId) return;
 
     setFetching(true);
-    // URL structure: .../models/{id}.json
-    const url = `${R2_BASE_URL}/models/${modelId}.json`;
+    // URL structure: .../ai_benchmark_leaderboard/latest/models/{id}.json
+    const url = `${R2_BASE_URL}/ai_benchmark_leaderboard/latest/models/${modelId}.json`;
 
     fetch(url)
       .then(res => {
