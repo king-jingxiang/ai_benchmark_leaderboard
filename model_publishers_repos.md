@@ -33,3 +33,4 @@
 | 清华/面壁智能     | https://huggingface.co/openbmb                                          |
 | 时域科技/阶跃星辰 | https://huggingface.co/ACE-Step                                         |
 | 天工              | https://huggingface.co/Skywork                                          |
+| 上海AI Lab        | https://huggingface.co/internlm                                         |                                                                  |
